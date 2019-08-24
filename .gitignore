@@ -123,4 +123,12 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+sass
+.sass-cache
 # End of https://www.gitignore.io/api/java,linux,maven,eclipse
