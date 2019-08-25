@@ -21,8 +21,18 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- Simple Url Handler Mapping -->
+	<!-- <beans:bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+	   <beans:property name="mappings">
+		<beans:props>
+		   <beans:prop key="/index">navController</beans:prop>
+		   <beans:prop key="/about">navController</beans:prop>
+		   <beans:prop key="/services">navController</beans:prop>
+		   <beans:prop key="/contact">navController</beans:prop>
+		 </beans:props>
+	   </beans:property>
+	</beans:bean> -->
+			
 	<context:component-scan base-package="co.santosh.springMvc" />
-	
-	
 	
 </beans:beans>
