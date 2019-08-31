@@ -15,7 +15,7 @@ pageEncoding="ISO-8859-1"%>
 <!--   <link rel="icon" type="image/jpg" href="./img/title-logo.jpg"> -->
   <link rel="icon" type="image/jpg"  href="<c:url value="/resources/img/title_logo.jpg" />"> 
 
-  <!-- Bootstrap core CSS -->
+  <!--CSS -->
 <!--   <link href="./css/app.css" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/app.css" />">
 

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,49 +12,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Get Idea | Contacts</title>
-    <link rel="icon" type="image/jpg" href="./img/title-logo.jpg">
-
+    <!-- <link rel="icon" type="image/jpg" href="./img/title-logo.jpg"> -->
+	<link rel="icon" type="image/jpg"  href="<c:url value="/resources/img/title_logo.jpg" />"> 
+		
     <!-- Bootstrap core CSS -->
-    <link href="./css/app.css" rel="stylesheet">
+    <!-- <link href="./css/app.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/app.css" />"> 
 
     <!-- Font-Awesome CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">BizLight Theme</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://plus.google.com"><i class="fa fa-google-plus-g "></i></a></li>
-                    <li><a href="http://linkedin.com"><i class="fa fa-linkedin-in"></i></a></li>
-                </ul>
-
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
-
+	<%@include file="nav.jsp" %>  
     <div class="title-bar">
         <div class="container">
             <h1>Contact</h1>
@@ -138,8 +110,10 @@
     </footer>
     <!-- Bootstrap core JavaScript
   ================================================== -->
-    <script src="./bower_components/jquery/dist/jquery.js"></script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <!-- <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script> -->
+    <script type="text/javascript"  src="<c:url value="/resources/bower_components/jquery/dist/jquery.min.js" />"></script>
+ 	<script type="text/javascript"  src="<c:url value="/resources/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js" />"></script>
 </body>
 
 </html>

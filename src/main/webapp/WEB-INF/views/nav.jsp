@@ -13,14 +13,14 @@
 		</div>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="<c:url value="/WEB-INF/views/index.jsp"/>">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/services">Services</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
+				<li><a href="${pageContext.request.contextPath}/about">About</a></li>
+				<li><a href="${pageContext.request.contextPath}/services">Services</a></li>
+				<li><a href="${pageContext.request.contextPath}/contact">Contact</a></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right nav-login">
-          		<li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</a></li>
+          		<li><a href="${pageContext.request.contextPath}/login" class="btn btn-primary">Login</a></li>
         	</ul>
 
 			<ul class="nav navbar-nav navbar-right">
